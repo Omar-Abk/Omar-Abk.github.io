@@ -68,7 +68,7 @@ This project is recreation of a dynamic dashboard system of reboot01 system buil
 
 ## hosting
 the Project is also hosted on
-https://github.com/Omar-Abk/Omar-Abk.github.io
+https://omar-abk.github.io/
 
 ---
 Project Owner:
