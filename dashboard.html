@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header with username and logout -->
+    <header class="dashboard-header">
+        <div class="header-content">
+            <span class="user-welcome">Welcome, <span id="header-username">User</span></span>
+            <button onclick="auth.logout()" class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <!-- Top Row -->
+        <div class="top-row">
+            <!-- Basic Information -->
+            <section class="dashboard-section basic-info">
+                <h2>User Information</h2>
+                <div class="user-info">
+                    <p><strong>ID:</strong> <span id="user-id"></span></p>
+                    <p><strong>Username:</strong> <span id="user-login"></span></p>
+                    <p><strong>First Name:</strong> <span id="user-firstname"></span></p>
+                    <p><strong>Last Name:</strong> <span id="user-lastname"></span></p>
+                    <p><strong>Email:</strong> <span id="user-email"></span></p>
+                    <p><strong>Campus:</strong> <span id="user-campus"></span></p>
+                </div>
+            </section>
+
+            <!-- Last Activity (Projects) -->
+            <section class="dashboard-section projects">
+                <h2>Recent Projects</h2>
+                <div id="projects-list">Loading...</div>
+            </section>
+
+            <!-- Combined XP and Audit Section -->
+            <section class="dashboard-section xp-audit">
+                <h2>Progress Stats</h2>
+                <div class="stats-container-horizontal">
+                    <div class="stat-block">
+                        <h3>XP</h3>
+                        <div id="xp-info">Loading...</div>
+                    </div>
+                    <div class="stat-block">
+                        <h3>Audit Ratio</h3>
+                        <div id="audit-ratio">Loading...</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="bottom-row">
+            <!-- General Skills -->
+            <section class="dashboard-section skills">
+                <h2>Best Skills</h2>
+                <div id="skills-container">Loading...</div>
+            </section>
+
+            <!-- Tech Skills -->
+            <section class="dashboard-section tech-skills">
+                <h2>Technology Skills</h2>
+                <div id="tech-skills-container">Loading...</div>
+            </section>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

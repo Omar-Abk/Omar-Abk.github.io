@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphQL Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h1 class="main-title">GraphQL</h1>
+            <h2>Login</h2>
+            <div id="error-message" class="error-message"></div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="text" id="identifier" placeholder="Username or Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+
+</html>
